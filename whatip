@@ -1,0 +1,7 @@
+#!/bin/bash
+while :
+do
+	A=$(wget 216.146.38.70:80 -O - -o /dev/null | cut -d" " -f6 | sed 's/<\/body><\/html>//') 
+	echo "YOUR IP : ${A}"
+	
+done
